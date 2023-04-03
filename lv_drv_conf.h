@@ -453,10 +453,10 @@
 #  define EVDEV_CALIBRATE         1               /*Scale and offset the touchscreen coordinates by using maximum and minimum values for each axis*/
 
 #  if EVDEV_CALIBRATE
-#    define EVDEV_HOR_MIN         0               /*to invert axis swap EVDEV_XXX_MIN by EVDEV_XXX_MAX*/
-#    define EVDEV_HOR_MAX      4095               /*"evtest" Linux tool can help to get the correct calibraion values>*/
-#    define EVDEV_VER_MIN         0
-#    define EVDEV_VER_MAX      4095
+#    define EVDEV_HOR_MIN       200               /*to invert axis swap EVDEV_XXX_MIN by EVDEV_XXX_MAX*/
+#    define EVDEV_HOR_MAX      3850               /*"evtest" Linux tool can help to get the correct calibraion values>*/
+#    define EVDEV_VER_MIN      3600
+#    define EVDEV_VER_MAX       320
 #  endif  /*EVDEV_CALIBRATE*/
 #endif  /*USE_EVDEV*/
 
